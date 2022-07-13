@@ -18,7 +18,8 @@ from django.urls import path
 # from django.conf.urls import url
 from django.views.static import serve
 from django.conf import settings
+from new_app.views import homeview
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path('',homeview)
 ]
